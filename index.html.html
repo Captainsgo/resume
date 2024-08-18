@@ -1,0 +1,68 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Resume</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#payment">Payment</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about" class="animated fadeIn">
+    <h1 class="animated slideInLeft">My Resume</h1>
+    <p class="animated slideInRight">Name: Your Name</p>
+    <p class="animated slideInRight">Email: yourname@example.com</p>
+    <p class="animated slideInRight">Phone: +1234567890</p>
+    <p class="animated slideInRight">Skills: HTML, CSS, JavaScript, Web Development</p>
+    <p class="animated slideInRight">Experience: 2 Years in Web Development</p>
+  </section>
+
+  <section id="portfolio" class="animated fadeInUp">
+    <h2>Portfolio</h2>
+    <div class="portfolio-item animated zoomIn">
+      <h3>Project 1</h3>
+      <p>Description of Project 1</p>
+    </div>
+    <div class="portfolio-item animated zoomIn">
+      <h3>Project 2</h3>
+      <p>Description of Project 2</p>
+    </div>
+  </section>
+
+  <section id="contact" class="animated fadeInUp">
+    <h2>Contact Me</h2>
+    <form action="mailto:yourname@example.com" method="post" enctype="text/plain" class="animated bounceIn">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+      
+      <button type="submit" class="animated pulse">Send Message</button>
+    </form>
+  </section>
+
+  <section id="payment" class="animated fadeInUp">
+    <h2>Payment</h2>
+    <button class="animated rubberBand" onclick="window.location.href='https://payment-gateway.com'">Pay Now</button>
+  </section>
+
+  <footer class="animated fadeIn">
+    <p>&copy; 2024 Your Name. All rights reserved.</p>
+  </footer>
+</body>
+</html>
